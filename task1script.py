@@ -5,6 +5,9 @@ import datetime
 payload = {
     "username": "jws-test",
     "entity": "apex",
-    "sharedSecret": "1234567890"
+    "datetime": datetime.datetime.now()
 }
+
+# Secret given by document
+shared_secret: "1234567890"
 
