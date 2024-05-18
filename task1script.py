@@ -18,6 +18,8 @@ token = jwt.encode(
     algorithm="HS512"
 )
 
+print("Encoded:", token)
+
 # Decode
 decoded = jwt.decode(
     token, 
@@ -25,3 +27,4 @@ decoded = jwt.decode(
     algorithms="HS512"
 )
 
+print("Decoded: ", decoded)
