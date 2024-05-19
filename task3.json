@@ -1,0 +1,51 @@
+{
+    "document": "form removed for brevity",
+    "additionalProperties": false,
+    "title": "new_account_form",
+    "type": "object",
+    "version": 6,
+    "required": [
+        "customerType",
+        "applicants",
+        "applicantSignature",
+        "principalApprover"
+    ],
+    "properties": {
+        "customerType": "INDIVIDUAL",
+        "applicants": [
+            {
+                "identity": {
+                    "name": {
+                        "givenName": "Elizabeth",
+                        "familyName": "Windsor"
+                    },
+                    "dateOfBirth": "2003-04-23",
+                    "citizenshipCountry": "USA"
+                },
+                "contact": {
+                    "homeAddress": {
+                        "streetAddress": ["107 SE Washington St, Ste 256"],
+                        "city": "Portland",
+                        "country": "USA"
+                    },
+                    "phoneNumbers": [
+                        {
+                            "phoneNumber": "2148675309",
+                            "phoneNumberType": "HOME"
+                        }
+                    ]
+                },
+                "disclosures": {
+                    "isPoliticallyExposed": "YES",
+                    "isControlPerson": "NO"
+                }
+            }
+        ],
+        "applicantSignature": {
+            "eSigned": "YES"
+        },
+        "principalApprover": {
+            "approverName": "Approver Name"
+        }
+    }
+}

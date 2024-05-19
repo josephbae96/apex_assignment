@@ -44,6 +44,37 @@ So use the form contents, which would be the provided json file, to calculate by
 
 ## Task 3
 So no user data but there is data that states what is required:
- "customerType", "applicants", "applicantSignature", "principalApprover"
+ "customerType", 
+ "applicants", 
+ "applicantSignature", 
+ "principalApprover"
 
- So based on not using user data, I should then use what is required since 
+Generic Individal Cash Account and only filling out the fields required to do so.
+
+customerType is an enum and contains several different types
+                "INDIVIDUAL",   - this one wil be used
+                "IRA",
+                "JOINT",
+                "CUSTODIAN",
+                "SOLO401K"
+
+applicants contains several fields, which is an array and has several fields
+"required": [
+                    "identity",
+    consisting of name
+        consisting of givenName, familyName
+    consisting of dateOfBirth, citizenshipCountry
+                    "contact",
+    consisting of homeAddress
+        consisting of streetAddress, city, country
+    consisting of phoneNuimbers
+        consisting of phoneNumber, phoneNumberType
+                    "disclosures"
+    consisting of isPoliticallyExposed, isControlPerson
+                ]
+
+"applicantSignature",
+    consisting of eSigned
+ "principalApprover"
+    consisting of approverName
+

@@ -2,7 +2,7 @@ import json
 import hashlib
 import base64
 
-def form_hash(json_form):
+def generate_form_hash(json_form):
     
     sha256_digest = hashlib.sha256(json_form.encode("utf-8")).digest()
 
